@@ -1,4 +1,7 @@
 # How to train an Object Detector using Mobilenet SSD v2
+colab Notebook
+https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/Easy_Object_Detection_With_Custom_Data_Demo_Training.ipynb#scrollTo=KPahiXuPNQwX
+
 
 If you want to get an idea about how this works before diving right in, run the following Colab Notebook that will train on images included in the repo cloned in the notebook:
 
@@ -14,7 +17,7 @@ To use your own images for training read below:
 - preferably they should have .jpg extension
 - the images should be representative: the objects should be pictured at various angles and scales, in conditions/environment where you expect to perform detection
 - the model is not great at detecting relatively small objects
-- the Mobilenet SSDv2 model that you will train uses as input images of size `(300x300)` 
+- the Mobilenet SSDv2 model that you will train uses as input images of size `(300x300)`
 - the training images do not have to be that size, but should be fairly uniformly sized
 - for best performance and speed resize all images to e.g. `(800x 600)` or `(600x600)`
 
@@ -31,7 +34,7 @@ https://drive.google.com/open?id=1t1voebiZ42Bu7_3IEIWdZEURw9o3J7Cq
 
 ### Step 3: Organize the images for training
 - randomly select approximately 20% of your images and place them in a `test` folder together with the corresponding `.xml.` annotation files
-- place the remaining images in a `train` folder together with their annotations 
+- place the remaining images in a `train` folder together with their annotations
 - select a few extra images with no annotations to be used as an evaluation after the training is complete and place them in a `final_test_folder`
 - upload the three folders to your google drive
 
@@ -40,4 +43,3 @@ https://drive.google.com/open?id=1t1voebiZ42Bu7_3IEIWdZEURw9o3J7Cq
 Follow the instructions in the notebook:
 
 https://drive.google.com/open?id=1p1KEb37RS3h5HvjxSzcByeCmWdhdYBOD
-
